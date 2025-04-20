@@ -1,0 +1,13 @@
+h1{
+    font-family: montserrat,arial;
+}
+p{
+    font-family: montserrat,arial;
+    font-weight:20px;
+}
+.span{
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight:20px;
+    
+}
