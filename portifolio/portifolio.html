@@ -122,7 +122,14 @@
                color: white;
                background-color: black;
                border-style: none;
+               transition: 0.2s;
             }
+
+            #message1:hover{
+                  background-color: white;
+                  color: black;
+            }
+
             #message{
                 padding: 30px;
             }
@@ -195,8 +202,8 @@
                 transition:0.3s
             }
             #button2:hover{
-                background-color: rgb(0, 0, 0);
-                color:  rgb(255, 255, 255);
+                background-color: rgb(255, 255, 255);
+                color:  rgb(0, 0, 0);
             }
             #section-paragraph{
                 color: grey;
@@ -235,16 +242,28 @@
                 background-color: white;
                 color: rgb(250, 102, 9);
             }
+            #port{
+                text-decoration: underline;
+                color:  rgb(250, 102, 9) ;
+            }
+            #head-logo{
+                transition: 0.2s;
+            }
+            #head-logo:hover{
+                color: rgb(250, 102, 9) ;
+                cursor: pointer;
+                box-shadow: 3px 3px 3px 0.3px rgb(250, 102, 9)  ;
+            }
     </style>
 </head>
 <body>
    <header class="main-header">
     <div class="left-section">
-        <p style="font-weight: bold;"><span id="span-syle">Hay</span>der</p>
+        <p style="font-weight: bold; " id="head-logo" ><span id="span-syle">Hay</span>der</p>
     </div>
     <div class="middle-section">
         <ul>
-            <li><a href="" id="links">portifolio</a></li>
+            <li><a href="" id="links" style="color: rgb(250, 102, 9) ; text-decoration: underline;">portifolio</a></li>
             <li><a href="" id="links">services</a></li>
             <li><a href="" id="links">skills</a></li>
             <li><a href="" id="links">contact </a></li>
@@ -293,6 +312,7 @@
 
         <div class="main-contact">
             <div class="input-lists">
+                <h2 style="margin-left: 30px; ">Contact <span id="color" >Me</span></h2>
                 <input type="text" placeholder="Name" class="inside">
                 <input type="email" placeholder="Email" class="inside">
                 <input type="text" placeholder="Phone number" class="inside">
