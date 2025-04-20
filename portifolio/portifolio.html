@@ -186,7 +186,7 @@
 
             #button2{
                 background-color:rgb(250, 102, 9);;
-                color: white;
+                color: rgb(0, 0, 0);
                 border-style: solid;
                 border-width: 1px;
                 padding-top: 10px;
@@ -208,8 +208,32 @@
                 
                 
                 border-width: 2px;
-                box-shadow: 5px 5px 10px 5px black;
+                box-shadow: 5px 5px 10px 5px rgb(0, 0, 0);
               
+            }
+            #profile2{
+                transition: 0.2s;
+            }
+            #profile2:hover{
+                border-width: 2px;
+                box-shadow: 5px 5px 10px 5px rgb(131, 127, 127);
+            }
+            #color{
+                color: rgb(250, 102, 9);
+            }
+            #button3{
+                background-color:rgb(250, 102, 9);;
+                color: rgb(255, 255, 255);
+                border-style: solid;
+                border-width: 1px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 3px;
+                transition:0.3s
+            }
+            #button3:hover{
+                background-color: white;
+                color: rgb(250, 102, 9);
             }
     </style>
 </head>
@@ -244,7 +268,7 @@
             Soluta ducimus veritatis delectus porro eveniet officia 
             distinctio qui culpa tempora quia voluptatibus cumque 
             molestias, eaque numquam itaque recusandae voluptatem! 
-            Accusantium, magni.
+            Accusantium, magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error, ullam eius culpa possimus deserunt laboriosam nisi rerum assumenda amet labore necessitatibus eos placeat inventore, unde autem cumque voluptate molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit id cumque repellat similique eaque velit sint maxime odio, laudantium accusamus iusto iste nihil incidunt, rem totam recusandae, quae repellendus beatae.
           </p>
           <div class="buttons">
             <button id="button1">Hire Me</button>
@@ -256,14 +280,14 @@
 
         <div class="main-div2">
             <div class="image2">
-                <img src="download (1).jfif" alt="">
+                <img src="download (1).jfif" alt="" id="profile2">
             </div>
 
             <div class="text-part">
-                <h2>About Me</h2>
-                <h1>Frontend Developer</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio dolor quos deleniti, in corporis quaerat accusantium aliquid dolorum autem odio mollitia, nisi est sapiente molestias at laudantium numquam error ratione!</p>
-                <button>button</button>
+                <h2>About <span id="color">Me</span></h2>
+                <h1>Frontend <span id="color">Developer</span></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio dolor quos deleniti, in corporis quaerat accusantium aliquid dolorum autem odio mollitia, nisi est sapiente molestias at laudantium numquam error ratione! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, accusantium aliquid quas soluta, harum, laudantium qui numquam est illum molestiae ex quam aliquam excepturi quae nostrum architecto eos corporis ratione! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet dolor cum voluptatibus modi aut nihil consectetur provident placeat explicabo, temporibus non, aliquid neque error dolorum id facilis! Fugit, tempore sint!</p>
+                <button id="button3">Experience</button>
             </div>
         </div>
 
