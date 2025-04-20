@@ -130,23 +130,52 @@
                 background-color: black;
                 padding: 20px ;
 
+
+            }
+
+            #links{
+                text-decoration: none;
+                color: white;
+                transition: 0.2s;
+                font-weight: bold;
+            }
+            #links:hover{
+                text-decoration: underline;
+                color: rgb(250, 102, 9);
+            }
+            #button{
+                border-style: none;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-right: 8px;
+                padding-left: 8px;
+                transition: 0.3s;
+                border-radius: 3px;
             }
             
+            #button:hover{
+                background-color: rgb(250, 102, 9);
+                color: white;
+            }
        
+            #span-syle{
+                font-weight: bold;
+                color:  rgb(250, 102, 9);
+            }
     </style>
 </head>
 <body>
    <header class="main-header">
     <div class="left-section">
-        <p>Hayder</p>
+        <p style="font-weight: bold;"><span id="span-syle">Hay</span>der</p>
     </div>
     <div class="middle-section">
         <ul>
-            <li><a href="">portifolio</a></li>
-            <li><a href="">services</a></li>
-            <li><a href="">skills</a></li>
-            <li><a href="">contact</a></li>
-            <li><a href="">more q</a></li>
+            <li><a href="" id="links">portifolio</a></li>
+            <li><a href="" id="links">services</a></li>
+            <li><a href="" id="links">skills</a></li>
+            <li><a href="" id="links">contact </a></li>
+            <li><a href="" id="links">more q</a></li>
         </ul>
     </div>
     <div class="right-section">
