@@ -82,11 +82,50 @@
          align-items: center; 
          gap: 30px; 
          color: aliceblue;
-         padding-bottom: 100px;
+         padding-bottom: 120px;
          padding-top: 50px;
          padding-left: 30px;
          padding-right: 50px;
         }
+        .main-contact{
+            background-color: antiquewhite;
+            margin-left: 400px;
+            margin-right: 400px;
+            margin-top: 100px;
+            margin-bottom: 30px;
+        }
+        .main-contact .input-lists input{
+            display: block;
+            justify-content: center;
+        }
+        .input-lists { display: flex; flex-direction: column;
+             gap: 15px;
+            
+             
+             }
+             .main-contact .input-lists{
+                padding: 10px;
+              
+             }
+             .main-contact .input-lists .inside{
+                padding: 7px;
+                border-radius: 3px;
+                border-width: 1px;
+                border-style: solid;
+               background-color: aliceblue;
+               border-color: rgb(215, 215, 215);
+             }
+            
+            #message1{
+               padding: 10px;
+               color: white;
+               background-color: black;
+               border-style: none;
+            }
+            #message{
+                padding: 30px;
+            }
+            
        
     </style>
 </head>
@@ -106,7 +145,7 @@
     </div>
     <div class="right-section">
 
-        <button>contact Me</button>
+        <button id="button">contact Me</button>
     </div>
    </header>
 
@@ -141,6 +180,16 @@
                 <h1>Frontend Developer</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio dolor quos deleniti, in corporis quaerat accusantium aliquid dolorum autem odio mollitia, nisi est sapiente molestias at laudantium numquam error ratione!</p>
                 <button>button</button>
+            </div>
+        </div>
+
+        <div class="main-contact">
+            <div class="input-lists">
+                <input type="text" placeholder="Name" class="inside">
+                <input type="email" placeholder="Email" class="inside">
+                <input type="text" placeholder="Phone number" class="inside">
+                <input type="text" placeholder="your message" class="inside" id="message">
+                <button id="message1">send Message</button>
             </div>
         </div>
    </main>
